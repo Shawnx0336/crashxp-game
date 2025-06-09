@@ -240,7 +240,7 @@ export default function CrashXPGame() {
   // ALL FUNCTIONS GO HERE
 
   // Basic utility/helper functions (not useCallback if they don't depend on state/props, or simple useCallbacks with minimal dependencies).
-  const showToast = useCallback((message: string, type = 'info') => {
+  const showToast = useCallback((message: string, type: 'info' | 'success' | 'error' | 'warning' | 'social' = 'info') => {
   const id = Date.now() + Math.random();
     setUi(prev => ({
       ...prev,
