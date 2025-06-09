@@ -14,8 +14,10 @@
 		"@whop-apps/sdk": "^0.0.1-canary.116",
 		"@whop/api": "^0.0.24",
 		"@whop/react": "0.2.0",
+		"chart.js": "^4.4.9",
 		"chartjs-adapter-moment": "^1.0.1",
 		"classnames": "^2.5.1",
+		"moment": "^2.30.1",
 		"next": "15.3.2",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0"
