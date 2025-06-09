@@ -12,7 +12,7 @@
 		"@types/classnames": "^2.3.0",
 		"@vercel/functions": "^2.0.3",
 		"@whop-apps/sdk": "^0.0.1-canary.116",
-		"@whop/api": "^0.0.24",
+		"@whop/api": "^0.0.26",
 		"@whop/react": "0.2.0",
 		"chart.js": "^4.4.9",
 		"chartjs-adapter-moment": "^1.0.1",

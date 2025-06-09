@@ -103,6 +103,13 @@ interface UserData {
   role: 'user' | 'creator';
 }
 
+// Interface for Toast type
+interface Toast {
+  id: number;
+  message: string;
+  type: 'info' | 'success' | 'error' | 'warning' | 'social';
+}
+
 // Interface for Leaderboard Entry
 interface LeaderboardEntry {
   id: string;
@@ -113,6 +120,8 @@ interface LeaderboardEntry {
   gamesPlayed: number;
   isCurrentUser: boolean;
 }
+
+
 
 // Define ToastType union for showToast
 type ToastType = 'info' | 'error' | 'success' | 'warning' | 'social';
@@ -243,9 +252,9 @@ export default function CrashXPGame() {
   const showToast = useCallback((message: string, type: 'info' | 'success' | 'error' | 'warning' | 'social' = 'info') => {
   const id = Date.now() + Math.random();
     setUi(prev => ({
-      ...prev,
-      toasts: [...prev.toasts, { id, message, type }]
-    }));
+  ...prev,
+  toasts: [...prev.toasts, { id, message, type } as Toast]
+}));
     setTimeout(() => {
       setUi(prev => ({
         ...prev,

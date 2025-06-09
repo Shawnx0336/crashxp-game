@@ -243,9 +243,9 @@ export default function CrashXPGame() {
   const showToast = useCallback((message: string, type = 'info') => {
   const id = Date.now() + Math.random();
     setUi(prev => ({
-      ...prev,
-      toasts: [...prev.toasts, { id, message, type }]
-    }));
+  ...prev,
+  toasts: [...prev.toasts, { id, message, type } as Toast]
+}));
     setTimeout(() => {
       setUi(prev => ({
         ...prev,
