@@ -9,11 +9,13 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@types/classnames": "^2.3.0",
 		"@vercel/functions": "^2.0.3",
 		"@whop-apps/sdk": "^0.0.1-canary.116",
 		"@whop/api": "^0.0.24",
 		"@whop/react": "0.2.0",
 		"chartjs-adapter-moment": "^1.0.1",
+		"classnames": "^2.5.1",
 		"next": "15.3.2",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0"
